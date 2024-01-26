@@ -1,8 +1,8 @@
 <div class="main-container w-10/12 h-28  flex flex-row justify-center items-center">
     <div class="left-container h-full overflow-hidden flex flex-row items-center  mr-auto">
-        <img class="hidden mobile:block mr-5 w-5" src="/assets/images/icon-menu.svg" alt=""
+        <img class="hidden mobile:block mr-5 w-5" src="assets/images/icon-menu.svg" alt=""
         (click)="togglemobilemenu()">
-        <img class="max-w-[192px] mr-14" src="/assets/images/logo.svg" alt="sneakers-logo">
+        <img class="max-w-[192px] mr-14" src="assets/images/logo.svg" alt="sneakers-logo">
         <nav class="w-full h-full bg-White flex justify-center items-center mobile:hidden">
           <ul class="w-full flex  h-full flex-row mobile:flex-col justify-center items-center gap-9 ">
             <li class="relative h-full flex justify-center items-center"><a class="text-center font-kumbh text-Darkgrayishblue" routerLink="/collections">Collections</a></li>
@@ -16,7 +16,7 @@
          mobile:h-screen mobile:w-[40vw] mobile:min-w-[150px] mobile:fixed
          mobile:flex justify-center items-center z-20"
          [hidden]="togglemobilenavbar" [@fadeInOut]="togglemobilenavbar ? 'void' : '*'" [@slideleft2right]="togglemobilenavbar ? 'void' : '*'">
-         <img class="hidden mobile:block mobile:absolute top-10 left-10 " src="/assets/images/icon-close.svg" alt=""
+         <img class="hidden mobile:block mobile:absolute top-10 left-10 " src="assets/images/icon-close.svg" alt=""
          (click)="togglemobilemenu()">
             <ul class="w-full flex flex-row mobile:flex-col justify-start items-center gap-9 ">
               <li><a class="custom-link" routerLink="/collections">Collections</a></li>
@@ -30,7 +30,7 @@
     </div>
     <div class="relative right-container ml-auto flex flex-row justify-end items-center">
       <div class="relative">
-        <img src="/assets/images/icon-cart.svg" alt=""
+        <img src="assets/images/icon-cart.svg" alt=""
         (click)="carttoggle()" class="min-w-[24px]">
         <p *ngIf="!(isEmpty$ | async)" class="cart-n-items rounded-xl w-4 h-3 absolute right-[-4px] top-[-4px] text-xs 
         bg-Orange text-White flex justify-center items-center
