@@ -31,9 +31,9 @@
             (mousedown)="setActiveImage(i)">
             <div onselectstart="return false" class="activethumbnail absolute 
             w-full h-full bg-[hsla(0,0%,100%,0.7)] rounded-xl z-10 transition-opacity
-            duration-300 ease-in-out hover:opacity-75 hover:cursor-pointer"
-                [class.opacity-100]="(activeState)===i" [class.border-[3px]]="(activeState)===i"
-                [class.border-Orange]="(activeState)===i" [class.opacity-0]="(activeState)!==i">
+            duration-300 ease-in-out hover:opacity-75 hover:cursor-pointer" [class.opacity-100]="(activeState)===i"
+                [class.border-[3px]]="(activeState)===i" [class.border-Orange]="(activeState)===i"
+                [class.opacity-0]="(activeState)!==i">
             </div>
             <img onselectstart="return false" class="rounded-xl" [src]="thimages[i]" alt="">
         </div>

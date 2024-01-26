@@ -95,7 +95,7 @@ export class ProductdetailsComponent implements OnInit {
           quantity: count,
         }
 
-        this.store.dispatch(CartActions.addToCart({ item: newproduct}));
+        this.store.dispatch(CartActions.addToCart({ item: newproduct }));
       }
     });
   }
